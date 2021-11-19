@@ -1,0 +1,56 @@
+.container-full{
+    max-width:100%;
+    width: rem(1440);
+	padding-left: rem(15);
+	padding-right: rem(15);
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+    transition:0.3s;
+    @include rmin (1440){
+        width: rem(1410);
+    }
+    @include rmin (1024){
+        width: rem(994);
+    }
+    @include rmin (768){
+        width: rem(738)
+    }
+    @include rmin (425){
+        width: rem(395)
+    }
+    @include rmin (375){
+        width: rem(345)
+    }
+    @include rmin (320){
+        width: rem(290)
+    }
+}
+.container{
+    max-width:100%;
+    width: rem(1040);
+	padding-left: rem(15);
+	padding-right: rem(15);
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+    transition:0.3s;
+    @include rmin (1440){
+        width: rem(1040);
+    }
+    @include rmin (1024){
+        width: rem(994);
+    }
+    @include rmin (768){
+        width: rem(738);
+    }
+    @include rmin (425){
+        width: rem(395)
+    }
+    @include rmin (375){
+        width: rem(345)
+    }
+    @include rmin (320){
+        width: rem(290)
+    }
+}

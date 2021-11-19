@@ -1,12 +1,75 @@
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
     margin: 0;
     padding: 0;
 }
 
-.container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+// Проверка
+// body {
+//     background: url(../../../img/3.png) 50% 0 no-repeat;
+//     opacity: .6;
+// }
+
+.pd {
+    &__26 {
+        padding-top: rem(26);
+        padding-bottom: rem(26);
+
+        @include w(1200) {
+            padding-top: rem(13);
+            padding-bottom: rem(13);
+        }
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+img:hover{
+    opacity:0.7;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    color: #72787D;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 64px;
+    color: #212B31;
+    @include w(768){
+        font-size:24px;
+        line-height: 32px;
+    }
+}
+
+h3{
+    font-size: 32px;
+    line-height: 48px;
+    color: #212B31;
+    @include w (425){
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+

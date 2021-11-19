@@ -1,0 +1,61 @@
+.header {
+    &__logo {}
+}
+
+.header-btn {
+    &__btn {
+        padding: 9px 20px 9px 20px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+
+.header-menu {
+    @include w(1440) {
+        display: none;
+    }
+
+    &__link {
+        margin-right: rem(22);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #72787D;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &--active {
+            color: #036FC7;
+        }
+
+    }
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: rem(15);
+    padding-right: rem(15);
+}
+
+.header-mmenu {
+    display: none;
+
+    @include w (1440) {
+        display: block;
+
+    }
+
+    &__burger {
+        cursor: pointer;
+    }
+}
+
+// Проверка 
+// body{
+//     background: url(../../../img/header.png) 50% 0  no-repeat;
+//     opacity: .6;
+// }

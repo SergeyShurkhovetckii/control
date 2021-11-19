@@ -1,0 +1,28 @@
+.chaos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__img {
+        margin-bottom: rem(144);
+
+        @include w(768) {
+            margin-bottom: rem(72);
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-bottom: rem(40);
+
+        @include w(768) {
+            font-size: 16px;
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(16);
+    }
+}

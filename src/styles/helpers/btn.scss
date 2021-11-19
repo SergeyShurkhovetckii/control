@@ -1,0 +1,32 @@
+.btn{
+    cursor: pointer;
+}
+.btn--dark{
+    background: #212B31;
+    border: 1px solid #212B31;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    color: #fff;
+}
+.btn--dark:hover{
+    background-color: #FFDD76;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    color: #212B31;
+    transition: 0.5s;
+    border: 1px solid #FFDD76;
+}
+
+.btn--transparent{
+    background: #fff;
+    border: 1px solid #DADEDF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.btn--transparent:hover{
+    background: #212B31;
+    color: #fff;
+    transition: 0.5s;
+    border: 1px solid #212B31;
+}
+

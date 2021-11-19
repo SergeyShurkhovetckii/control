@@ -54,6 +54,18 @@
     }
 }
 
+.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 3px 2px #DADEDF;
+    box-shadow: 1px 1px 3px 2px #DADEDF;
+    transition: 0.2s;
+}
+
 // Проверка 
 // body{
 //     background: url(../../../img/header.png) 50% 0  no-repeat;

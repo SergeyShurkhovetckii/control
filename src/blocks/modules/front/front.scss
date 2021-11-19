@@ -26,11 +26,13 @@
         padding-left: rem(111);
         padding-right: rem(111);
         margin-top: rem(36);
+        margin-bottom: rem(148);
 
         @include w (1040) {
             margin-top: rem(19);
             padding-left: rem(10);
             padding-right: rem(10);
+            margin-bottom: rem(74);
         }
     }
 }

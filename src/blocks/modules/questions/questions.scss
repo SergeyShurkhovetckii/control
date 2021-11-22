@@ -1,0 +1,31 @@
+.questions {
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+.questions-row {
+    margin-top: rem(28);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @include w (768) {
+        flex-direction: column;
+    }
+    &__wrapper {
+    }
+
+    &__col {
+        width: 49%;
+        margin-bottom: rem(69);
+
+        @include w (768) {
+            width: 100%;
+        }
+    }
+}

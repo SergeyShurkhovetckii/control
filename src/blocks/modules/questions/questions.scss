@@ -23,6 +23,7 @@
     &__col {
         width: 49%;
         margin-bottom: rem(69);
+        text-align: center;
 
         @include w (768) {
             width: 100%;

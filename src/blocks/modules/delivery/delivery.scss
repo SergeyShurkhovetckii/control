@@ -1,0 +1,54 @@
+.delivery {
+    text-align: center;
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        color: #72787D;
+        margin-bottom: rem(43);
+        width: calc(100% / 12 * 6);
+        margin: 0 auto;
+        @include w (768){
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(21);
+    }
+}
+
+.delivery-items {
+    margin-top: rem(55);
+    &__grid {
+        display:grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap:rem(33);
+        @include w (1024){
+            grid-template-columns:repeat(1, 1fr);
+        }
+    }
+}
+.card {
+    display: flex;
+    text-align:left;
+
+    &__pic {}
+}
+
+.card-about {
+    margin-left: rem(16);
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #72787D;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        color: #212B31;
+        margin-bottom: rem(11);
+
+    }
+}
